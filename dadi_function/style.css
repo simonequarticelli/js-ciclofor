@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+body{
+  background-color: #fafafa;
+}
+.container_game,
+.container_risultato{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+  width: 100vw;
+}
+#gioco_dadi_p1,
+#gioco_dadi_p2{
+  padding:20px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  border: 0px;
+  box-shadow: 5px 10px 8px 10px #888888;
+  background: #fafafa;
+}
+#gioco_dadi_p1,
+#gioco_dadi_p2{
+  transition: 1s;
+}
+#gioco_dadi_p1:hover,
+#gioco_dadi_p2:hover{
+  transform: scale(1.1);
+}
+#risultato_player1,
+#risultato_player2{
+  background: url("dado.png");
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+  font-size: 50px;
+  text-align: center;
+  line-height: 200px;
+  color: white;
+  text-shadow: 2px 2px 3px black, 0 0 30px blue, 0 0 10px darkblue;
+}
+#verdetto{
+  font-size: 40px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px red;
+}
